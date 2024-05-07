@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & run",
+            "type": "shell",
+            "command": "g++ -std=c++11 -c main.cpp && g++ main.o -o main.exec -lGL -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl && ./main.exec",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
